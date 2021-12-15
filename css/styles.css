@@ -1,78 +1,140 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+html {
     font-size: 16px;
 }
 
+
 /* Redimensión de fuente utilizando rem */
-p{
+
+p {
     font-size: 1rem;
 }
 
-h1{
+h1 {
+    margin: 0;
     font-size: 3rem;
 }
 
-h3{
+h3 {
     font-size: 2rem;
 }
 
+
 /* clases predefinidas */
+
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
-body{
+
+body {
     margin: 0;
 }
 
+
 /* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
+
 /* Diseño de columnas */
-.column-1{
+
+.column-1 {
     width: 100%;
     float: left;
 }
 
-.column-2{
+.column-2 {
     width: 50%;
     float: left;
 }
 
-.column-3{
+.column-3 {
     width: 33.33%;
     float: left;
 }
 
-.column-4{
+.column-4 {
     width: 25%;
     float: left;
 }
 
-.column-5{
+.column-5 {
     width: 20%;
     float: left;
 }
 
-.column-6{
+.column-6 {
     width: 16.66%;
     float: left;
 }
 
+
 /* Otras clases */
 
-@media only screen and (max-width: 600px) {
-/*reglas*/
+header {
+    height: 100vh;
+    color: white;
+    background-image: url("../img/jose-g-ortega-castro-HMD_h2eOAdA-unsplash.jpg");
+    /*ajustar la imagen en la horizontal*/
+    background-size: cover;
+    /*mover la imagen para dejarla en el centro*/
+    background-position: center;
+}
+
+.flex {
+    /*display no hace nada por si solo pero es necesario para lo siguiente*/
+    display: flex;
+    /*alinear en vertical*/
+    align-items: center;
+    /*alinear en horizontal*/
+    justify-content: center;
+}
+
+#card-1 {
+    background-image: url("../img/1.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-2 {
+    background-image: url("../img/2.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-3 {
+    background-image: url("../img/3.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-4 {
+    background-image: url("../img/4.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.padding-s {
+    padding: 0.5%;
+}
+
+@media only screen and (max-width: 800px) {
+    /*reglas*/
     /* column-3 pasará de tener 33.33% a 100% */
-    .column-3{
+    .column-3 {
         width: 100%;
     }
-    /* column-4 pasará de tener 25% a 50% */
-    .column-4{
+    /*column-4 pasará de tener 25% a 50% */
+    .column-4 {
         width: 50%;
-    }
-    #caja-10{
-        width: 100%;
     }
 }
